@@ -90,3 +90,17 @@ match result {
     }
 }
 ```
+
+**Ownership**  
+```Rust
+let x = Pixel{r, g, b}
+let mut y = x;
+
+print!("x")
+```
+The above code causes error cause Pixel data has been *moved*, and x no longer exists. 
+- <u>moved</u> 
+    - y owns pixel
+    - x is now invalid
+- <u>not copying:</u> leads to excess memory usage 2 pixels floating
+- <u>not referencing:</u> shared pointer could cause isses. do all these pointers to x point to a valid object? does it exist? changed?
