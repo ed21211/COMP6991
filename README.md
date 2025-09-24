@@ -13,9 +13,18 @@ current; running in debug mode, tries to runs and touche all ends of code to mak
 cargo run —release (compiles faster) makes shortcuts <br>
 
 # WEEK 00 
-println!("hello!") //prints line with newline
 
-use std::io;
+## Printing lines
+println!("hello!") //prints line with newline
 print!("hellooo~") //does not have newline
 eprint!("error or progress msg") 
+
+## Read stdin
 read_line(&mut input)
+    let mut input = String::new();
+    io::stdin().read_line(&mut input)
+
+# WEEK 01
+
+
+
