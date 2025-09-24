@@ -9,7 +9,7 @@ fn get_universe_details(universe_id: u32) -> Option<UniverseDetails> {
 
     let three = UniverseDetails {
         universe_name: "Star Wars".to_string(),
-        universe_winner: "Rebellion".to_string(),
+        universe_winner: "The Rebellion".to_string(),
         universe_population: 4294967295,
     };
     let five = UniverseDetails {
